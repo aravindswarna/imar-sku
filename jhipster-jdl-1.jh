@@ -1,0 +1,34 @@
+entity Location {
+	locationName String
+    
+}
+
+entity Department {
+	departmentName String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Category {
+	categoryName String
+}
+
+entity SubCategory {
+	subcategory String
+}
+entity Sku
+{
+	skuDesc String
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Sku{location} to Location,
+	Location{department} to Department,
+	Department{category} to Category,
+    Category{subCategory} to SubCategory
+	
+}
+
+
+
+

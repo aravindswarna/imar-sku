@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "location",
+            "otherEntityName": "location",
+            "otherEntityRelationshipName": "sku"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "skuDesc",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180409200652",
+    "entityTableName": "sku",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

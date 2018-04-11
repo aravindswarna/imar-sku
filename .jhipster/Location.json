@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "department",
+            "otherEntityName": "department",
+            "otherEntityRelationshipName": "location"
+        },
+        {
+            "relationshipName": "sku",
+            "otherEntityName": "sku",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "locationName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180409192758",
+    "entityTableName": "location",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
